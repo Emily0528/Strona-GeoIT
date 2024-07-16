@@ -44,6 +44,15 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
 }
 
+header {
+  background-color: var(--color-primary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+
 #header {
   background-color: var(--color-primary);
   width: 100%;
