@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MS SQL Serwer</title>
+    <link rel="icon" href="assets/logo/logo-30.svg" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rwd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="assets/logo/logo.png" alt="Logo mojej strony" />
+        <h1>GeoIT</h1>
+      </div>
+      <nav class="header-desktop">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="ms-sql.html" class="active">MS SQL</a></li>
+          <li><a href="cps.html">PSC</a></li>
+          <li><a href="skaly.html">Skały</a></li>
+        </ul>
+      </nav>
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" id="tab-1" name="tab-group-1" />
+          <label for="tab-1" class="menu-btn">&#9776; </label>
+          <div class="tab close-tab">
+            <input type="radio" id="tab-close" name="tab-group-1" />
+            <label for="tab-close" class="menu-btn">&#9776;</label>
+          </div>
+
+          <div class="header-content">
+            <ul>
+              <li><a href="python.html">Python</a></li>
+              <li><a href="ms-sql.html">MS SQL</a></li>
+              <li><a href="cps.html">PSC</a></li>
+              <li><a href="skaly.html">Skały</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <h2>Przedmioty</h2>
+      <details>
+        <summary>Programowanie Python</summary>
+        <ul>
+          <li><a href="python.html" class="link-with-icon">Podstawy</a></li>
+          <hr />
+          <li><a href="python.html" class="link-with-icon">Operatory</a></li>
+          <hr />
+          <li>
+            <a href="python.html" class="link-with-icon">Wyrażenia listowe</a>
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>MS SQL Server</summary>
+        <ul>
+          <li>
+            <a href="ms-sql.html#czesc-Ims" class="link-with-icon"
+              >Wprowadzenie</a
+            >
+          </li>
+          <hr />
+          <li>
+            <a href="ms-sql.html#czesc-IIms" class="link-with-icon">Edycja</a>
+          </li>
+          <hr />
+
+          <li>
+            <a href="ms-sql.html#czesc-IIIms" class="link-with-icon"
+              >Architektura</a
+            >
+          </li>
+          <hr />
+
+          <li>
+            <a href="ms-sql.html#czesc-VIms" class="link-with-icon"
+              >Przykładowe Zapytania</a
+            >
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>PSC - Przetwarzanie sygnałów cyfrowych</summary>
+        <ul>
+          <li>
+            <a href="cps.html#czesc-I" class="link-with-icon">Część I</a>
+          </li>
+          <hr />
+          <li>
+            <a href="cps.html#czesc-II" class="link-with-icon">Część II</a>
+          </li>
+          <hr />
+
+          <li>
+            <a href="cps.html#czesc-VI" class="link-with-icon">Część III</a>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Skały</summary>
+        <ul>
+          <li><a href="cps.html" class="link-with-icon">Skład Chemiczny</a></li>
+          <hr />
+          <li>
+            <a href="cps.html" class="link-with-icon">Struktura i Tekstura</a>
+          </li>
+          <hr />
+          <li>
+            <a href="cps.html" class="link-with-icon"
+              >Obecność Skamieniałości</a
+            >
+          </li>
+        </ul>
+      </details>
+    </div>
+    <main id="main">
+      <div id="middle">
+        <div class="tekst">
+          <h1 id="home">Podstawowe Informacje o Microsoft SQL Server</h1>
+          <section>
+            <article>
+              <h2><a id="czesc-Ims">Wprowadzenie do MS SQL Server</a></h2>
+
+              <p>
+                Microsoft SQL Server (MS SQL) to relacyjny system zarządzania
+                bazami danych (RDBMS) stworzony przez firmę Microsoft. Jest
+                jednym z najpopularniejszych systemów bazodanowych używanych na
+                świecie, znanym ze swojej wydajności, skalowalności i integracji
+                z innymi produktami Microsoft, takimi jak Windows Server, Azure
+                i Visual Studio.
+              </p>
+            </article>
+            <p id="mors">............................................</p>
+            <article>
+              <h2><a id="czesc-IIms">Edycje MS SQL Server</a></h2>
+              <p>
+                MS SQL Server jest dostępny w kilku edycjach, które różnią się
+                funkcjonalnością i ceną, aby sprostać różnym potrzebom
+                użytkowników:
+              </p>
+
+              <ul>
+                <li>
+                  <b>SQL Server Express:</b> Bezpłatna edycja, przeznaczona do
+                  małych aplikacji i nauki.
+                </li>
+                <li>
+                  <b>SQL Server Developer:</b> Darmowa edycja z pełną
+                  funkcjonalnością SQL Server, przeznaczona do tworzenia i
+                  testowania aplikacji.
+                </li>
+                <li>
+                  <b>SQL Server Standard:</b> Edycja przeznaczona dla małych i
+                  średnich firm, oferująca podstawowe funkcje zarządzania bazami
+                  danych.
+                </li>
+                <li>
+                  <b>SQL Server Enterprise:</b> Najbardziej zaawansowana edycja,
+                  oferująca pełen zestaw funkcji dla dużych organizacji i
+                  krytycznych aplikacji.
+                </li>
+              </ul>
+            </article>
+            <p id="mors">............................................</p>
+
+            <article>
+              <h2><a id="czesc-IIIms">Architektura MS SQL Server</a></h2>
+
+              <ul>
+                <li>
+                  <b>Instancja SQL Server:</b> Każdy uruchomiony egzemplarz SQL
+                  Server to osobna instancja. Można uruchomić wiele instancji na
+                  jednym serwerze fizycznym lub wirtualnym.
+                </li>
+                <li>
+                  <b>Baza danych:</b> Zbiór tabel, widoków, procedur
+                  składowanych, funkcji, indeksów i innych obiektów.
+                </li>
+                <li>
+                  <b>Tabela:</b> Podstawowy obiekt do przechowywania danych w
+                  bazie danych. Tabele składają się z wierszy i kolumn.
+                </li>
+                <li>
+                  <b>Indeks:</b> Struktura danych poprawiająca szybkość
+                  wyszukiwania i operacji na tabelach.
+                </li>
+                <li>
+                  <b>Widok:</b>Wirtualna tabela, która jest wynikiem zapytania
+                  do jednej lub więcej tabel.
+                </li>
+                <li>
+                  <b>Procedury składowane:</b>Zestaw instrukcji SQL, które mogą
+                  być zapisane i uruchamiane na serwerze.
+                </li>
+                <li>
+                  <b>Funkcje:</b>Funkcje zdefiniowane przez użytkownika, które
+                  zwracają pojedyncze wartości lub tabele.
+                </li>
+              </ul>
+            </article>
+            <article id="center-box">
+              <h2><a id="czesc-VIms">Przykładowe Zapytania</a></h2>
+              <p>Tworzenie bazy danych:</p>
+              <div id="box-green"><p>CREATE DATABASE NewDB;</p></div>
+              <p>Tworzenie tabeli:</p>
+              <div id="box-green">
+                <p>
+                  CREATE TABLE Employees ( <br />EmployeeID INT PRIMARY KEY,<br />
+                  FirstName NVARCHAR(50),<br />
+                  LastName NVARCHAR(50),<br />
+                  BirthDate DATE<br />
+                  );
+                </p>
+              </div>
+              <p>Wstawianie danych:</p>
+              <div id="box-green">
+                <p>
+                  Wstawianie danych: <br />VALUES (1, 'John', 'Doe',
+                  '1980-01-01');
+                </p>
+              </div>
+              <p>Zapytanie SELECT:</p>
+              <div id="box-green">
+                <p>SELECT * FROM Employees;</p>
+              </div>
+              <p>Aktualizacja danych:</p>
+              <div id="box-green">
+                <p>
+                  UPDATE Employees<br />SET LastName = 'Smith'<br />
+                  WHERE EmployeeID = 1;
+                </p>
+              </div>
+              <p>Usuwanie danych:</p>
+              <div id="box-green">
+                <p>DELETE FROM Employees<br />WHERE EmployeeID = 1;</p>
+              </div>
+            </article>
+          </section>
+          <a href="./ms-sql.html" class="button-link">Wróć do góry</a>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">&copy; 2024 Moja Pierwsza Strona Internetowa</footer>
+  </body>
+</html>
