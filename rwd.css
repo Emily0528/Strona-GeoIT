@@ -20,6 +20,11 @@
     display: inline;
     padding: 0;
   }
+
+  #header {
+    padding-right: 0;
+  }
+  
   .container {
     justify-content: space-around;
     margin: 0 auto;
@@ -49,6 +54,7 @@
     display: flex;
     position: relative;
     clear: both;
+    width: 100%;
   }
   .tab {
     display: flex;
