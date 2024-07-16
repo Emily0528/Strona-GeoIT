@@ -11,15 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   </head>
 </html>
   <body>
-    <header>
+    <header id="header">
       <div class="logo">
           <img src="assets/logo/logo.png" alt="Logo mojej strony">
-          <h1><span>Geo</span>IT</h1>
+          <h1>GeoIT</h1>
         </div>  
         <nav class="header-desktop">
           <ul>
@@ -28,7 +27,8 @@
               <a href="index.html">Home</a>
             </li>
             <li><a href="python.html" class="active">Python</a></li>
-            <li><a href="cps.html">CPS</a></li>
+            <li><a href="ms-sql.html">MS SQL</a></li>
+            <li><a href="cps.html">PSC</a></li>
             <li><a href="skaly.html">Skały</a></li>
           </ul>
         </nav>
@@ -44,7 +44,8 @@
             <div class="header-content">
               <ul>
                 <li><a href="python.html">Python</a></li>
-                <li><a href="cps.html">CPS</a></li>
+                <li><a href="ms-sql.html">MS SQL</a></li>
+                <li><a href="cps.html">PSC</a></li>
                 <li><a href="skaly.html">Skały</a></li>
               </ul>
             </div>
@@ -67,7 +68,35 @@
           </ul>
         </details>
         <details>
-          <summary>CPS - Przetwarzanie sygnałów cyfrowych</summary>
+          <summary>MS SQL Server</summary>
+          <ul>
+            <li>
+              <a href="ms-sql.html#czesc-Ims" class="link-with-icon"
+                >Wprowadzenie</a
+              >
+            </li>
+            <hr />
+            <li>
+              <a href="ms-sql.html#czesc-IIms" class="link-with-icon">Edycja</a>
+            </li>
+            <hr />
+  
+            <li>
+              <a href="ms-sql.html#czesc-IIIms" class="link-with-icon"
+                >Architektura</a
+              >
+            </li>
+            <hr />
+  
+            <li>
+              <a href="ms-sql.html#czesc-VIms" class="link-with-icon"
+                >Przykładowe Zapytania</a
+              >
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>PSC - Przetwarzanie sygnałów cyfrowych</summary>
           <ul>
             <li>
               <a href="cps.html#czesc-I" class="link-with-icon">Część I</a>
@@ -77,24 +106,9 @@
               <a href="cps.html#czesc-II" class="link-with-icon">Część II</a>
             </li>
             <hr />
+  
             <li>
-              <a href="cps.html#czesc-III" class="link-with-icon">Część III</a>
-            </li>
-            <hr />
-            <li>
-              <a href="cps.html#czesc-IV" class="link-with-icon">Część IV</a>
-            </li>
-            <hr />
-            <li>
-              <a href="cps.html#czesc-V" class="link-with-icon">Część V</a>
-            </li>
-            <hr />
-            <li>
-              <a href="cps.html#czesc-VI" class="link-with-icon">Część VI</a>
-            </li>
-            <hr />
-            <li>
-              <a href="cps.html#czesc-VII" class="link-with-icon">Część VII</a>
+              <a href="cps.html#czesc-VI" class="link-with-icon">Część III</a>
             </li>
           </ul>
         </details>
@@ -102,14 +116,16 @@
         <details>
           <summary>Skały</summary>
           <ul>
-            <li><a href="cps.html" class="link-with-icon">Wapienne</a></li>
+            <li><a href="cps.html" class="link-with-icon">Skład Chemiczny</a></li>
             <hr />
-            <li><a href="cps.html" class="link-with-icon">Magmowe</a></li>
+            <li><a href="cps.html" class="link-with-icon">Struktura i Tekstura</a></li>
+            <hr />
+            <li><a href="cps.html" class="link-with-icon">Obecność Skamieniałości</a></li>
           </ul>
         </details>
       </div>
     <main id="main">
-    
+      <div id="middle">
     
 
       <div class="tekst"><h1>Python</h1>
@@ -128,16 +144,9 @@
                 </div>
                 <div class="face face2">
                   <div class="content">
-                    <ul>
-                      <li>Arytmetyczne</li>
-                      <li>Logiczne</li>
-                      <li>Relacyjne</li>
-                      <li>Przypisania</li>
-                      <li>Identycznościowe</li>
-                      <li>Przypisania</li>
-                      <li>Bitowe</li>
-                    </ul>
-                  </div>
+                    <p>W języku Python istnieje wiele operatorów, których można używać do różnych celów. Poniżej przedstawiamy ...</p>
+                  
+                    <a href="#">Czytaj więcej...</a></div>
                 </div>
               </div>
               <div class="card">
@@ -150,8 +159,7 @@
                 <div class="face face2">
                   <div class="content">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quas cum cumque minus iste veritatis provident at.
+                      Pętla while jest jednym z podstawowych sposobów na wykonanie iteracji w języku programowania Python.
                     </p>
                     <a href="#">Czytaj więcej...</a>
                   </div>
@@ -167,8 +175,7 @@
                 <div class="face face2">
                   <div class="content">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quas cum cumque minus iste veritatis provident at.
+                      Charakteryzuje się ona tym że z góry wiemy ile razy się wykona. Słowa kluczowego for, zmiennej na której...
                     </p>
                     <a href="#">Czytaj więcej...</a>
                   </div>
@@ -193,6 +200,7 @@
                       <span class="blue-text"> suma_dz</span> = <span class="green-text">6</span> / <span class="green-text">2</span><span class="coment-text"> # dzielenie</span>
                     </div>
                   </pre>
+                
                 </li>
                 <li>Logiczne: Pozwalają tworzyć warunki logiczne, np. sprawdzanie czy dwa warunki są prawdziwe za pomocą operatorów `and`, `or`, `not`.</li>
                 <li>Relacyjne: Umożliwiają porównywanie wartości, np. sprawdzanie czy jedna wartość jest większa od drugiej za pomocą operatorów `>`, `<`, `>=`, `<=`.</li>
@@ -203,6 +211,7 @@
             <p>To tylko kilka przykładów operatorów w języku Python. Możesz używać ich w swoim kodzie, aby wykonywać różnorodne operacje!</p>
           </article>
 
+
          
 
           
@@ -210,7 +219,8 @@
         
         <a href="./python.html" class="button-link">Wróć do góry</a>
       </div>
+      </div>
     </main>
-    <footer>&copy; 2024 Moja Pierwsza Strona Internetowa</footer>
+    <footer id="footer">&copy; 2024 Moja Pierwsza Strona Internetowa</footer>
   </body>
 </html>
