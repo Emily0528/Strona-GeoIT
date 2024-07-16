@@ -5,10 +5,13 @@
 
   main {
     width: auto;
-
     margin: 50px auto;
   }
 
+   #main {
+    padding-left: 0;
+  }
+  
   .logo {
     display: none;
   }
