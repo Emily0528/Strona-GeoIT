@@ -219,10 +219,11 @@ summary {
 
 #main {
   margin-top: 85px;
+   padding-left: 10%;
 }
+
 main {
   margin: 0 auto;
-
   max-width: 1000px;
 }
 
