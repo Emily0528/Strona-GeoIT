@@ -13,8 +13,20 @@ a {
   color: black;
 }
 
+html,
 body {
-  font-family:  Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  font-family: Roboto, sans-serif;
   line-height: 1.6;
   margin: 0;
 }
@@ -32,17 +44,17 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
 }
 
-header {
+#header {
   background-color: var(--color-primary);
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding-right: 100px;
+}
+
+#middle {
+  padding-bottom: 150px;
 }
 
 .logo {
@@ -141,14 +153,15 @@ header nav ul li a:hover {
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
-  height: 100%;
+  height: calc(100% - 70px - 60px);
   width: 250px;
-  position: fixed;
+  position: absolute;
   background-color: #111;
   padding-top: 20px;
   padding-bottom: 200px;
   overflow: auto;
 }
+
 .sidebar::-webkit-scrollbar {
   width: 10px;
   background-color: #ddd;
@@ -170,6 +183,10 @@ header nav ul li a:hover {
 .sidebar h2 {
   font-family: "Inconsolata", monospace;
   font-weight: 400;
+}
+
+details {
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -196,7 +213,7 @@ summary {
 }
 main {
   margin: 0 auto;
-  padding: 16px;
+
   max-width: 1000px;
 }
 
@@ -210,18 +227,18 @@ math {
   padding-left: 50px;
 }
 
-footer {
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   background-color: var(--color-secondary);
   color: #515050;
   text-align: center;
   font-size: small;
-  display: block;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tekst {
@@ -332,7 +349,7 @@ footer {
 .terminal {
   background-color: black;
   color: white;
-  font-family: monospace;
+  font-family: Inconsolata, monospace;
   font-size: large;
   padding: 10px;
   margin: 20px;
@@ -377,7 +394,7 @@ footer {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url("img/icons8-leaf-ios-17-glyph/icons8-leaf-60.png");
+  background-image: url("assets/img/icons8-leaf-ios-17-glyph/icons8-leaf-60.png");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
@@ -482,4 +499,50 @@ h3 {
 
 .accordion-content p {
   margin: 0;
+}
+
+#mors {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+#box-green {
+  background-color: hsl(94, 72%, 25%, 0.5);
+  /*border: 2px solid var(--color-primary);*/
+  padding: 20px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  width: 60%;
+}
+
+#center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: flex-start;
+  max-height: 1000px;
+  height: auto;
+}
+
+.quote-box {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-bottom: 10px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
