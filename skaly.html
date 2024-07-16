@@ -13,14 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="logo">
         <img src="assets/logo/logo.png" alt="Logo mojej strony" />
-        <h1><span>Geo</span>IT</h1>
+        <h1>GeoIT</h1>
       </div>
       <nav class="header-desktop">
         <ul>
@@ -28,7 +26,8 @@
             <a href="index.html">Home</a>
           </li>
           <li><a href="python.html">Python</a></li>
-          <li><a href="cps.html">CPS</a></li>
+          <li><a href="ms-sql.html">MS SQL</a></li>
+          <li><a href="cps.html">PSC</a></li>
           <li><a href="skaly.html" class="active">Skały</a></li>
         </ul>
       </nav>
@@ -44,7 +43,8 @@
           <div class="header-content">
             <ul>
               <li><a href="python.html">Python</a></li>
-              <li><a href="cps.html">CPS</a></li>
+              <li><a href="ms-sql.html">MS SQL</a></li>
+              <li><a href="cps.html">PSC</a></li>
               <li><a href="skaly.html">Skały</a></li>
             </ul>
           </div>
@@ -67,7 +67,35 @@
         </ul>
       </details>
       <details>
-        <summary>CPS - Przetwarzanie sygnałów cyfrowych</summary>
+        <summary>MS SQL Server</summary>
+        <ul>
+          <li>
+            <a href="ms-sql.html#czesc-Ims" class="link-with-icon"
+              >Wprowadzenie</a
+            >
+          </li>
+          <hr />
+          <li>
+            <a href="ms-sql.html#czesc-IIms" class="link-with-icon">Edycja</a>
+          </li>
+          <hr />
+
+          <li>
+            <a href="ms-sql.html#czesc-IIIms" class="link-with-icon"
+              >Architektura</a
+            >
+          </li>
+          <hr />
+
+          <li>
+            <a href="ms-sql.html#czesc-VIms" class="link-with-icon"
+              >Przykładowe Zapytania</a
+            >
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>PSC - Przetwarzanie sygnałów cyfrowych</summary>
         <ul>
           <li>
             <a href="cps.html#czesc-I" class="link-with-icon">Część I</a>
@@ -77,24 +105,9 @@
             <a href="cps.html#czesc-II" class="link-with-icon">Część II</a>
           </li>
           <hr />
+
           <li>
-            <a href="cps.html#czesc-III" class="link-with-icon">Część III</a>
-          </li>
-          <hr />
-          <li>
-            <a href="cps.html#czesc-IV" class="link-with-icon">Część IV</a>
-          </li>
-          <hr />
-          <li>
-            <a href="cps.html#czesc-V" class="link-with-icon">Część V</a>
-          </li>
-          <hr />
-          <li>
-            <a href="cps.html#czesc-VI" class="link-with-icon">Część VI</a>
-          </li>
-          <hr />
-          <li>
-            <a href="cps.html#czesc-VII" class="link-with-icon">Część VII</a>
+            <a href="cps.html#czesc-VI" class="link-with-icon">Część III</a>
           </li>
         </ul>
       </details>
@@ -102,72 +115,83 @@
       <details>
         <summary>Skały</summary>
         <ul>
-          <li><a href="cps.html" class="link-with-icon">Wapienne</a></li>
+          <li><a href="cps.html" class="link-with-icon">Skład Chemiczny</a></li>
           <hr />
-          <li><a href="cps.html" class="link-with-icon">Magmowe</a></li>
+          <li>
+            <a href="cps.html" class="link-with-icon">Struktura i Tekstura</a>
+          </li>
+          <hr />
+          <li>
+            <a href="cps.html" class="link-with-icon"
+              >Obecność Skamieniałości</a
+            >
+          </li>
         </ul>
       </details>
     </div>
     <main id="main">
-      <div class="tekst">
-        <section>
-          <h1>Sposoby Rozpoznawania Skał Magmowych i Wapiennych</h1>
-          <p>
-            Rozpoznawanie skał magmowych i wapiennych może być fascynującym
-            wyzwaniem dla geologów i pasjonatów nauki. Oto kilka kluczowych
-            sposobów, dzięki którym można odróżnić te dwie kategorie skał:
-          </p>
-          <article id="article">
-            <h2>1. Skład Chemiczny:</h2>
+      <div id="middle">
+        <div class="tekst">
+          <section>
+            <h1>Sposoby Rozpoznawania Skał Magmowych i Wapiennych</h1>
+            <p>
+              Rozpoznawanie skał magmowych i wapiennych może być fascynującym
+              wyzwaniem dla geologów i pasjonatów nauki. Oto kilka kluczowych
+              sposobów, dzięki którym można odróżnić te dwie kategorie skał:
+            </p>
+            <article id="article">
+              <h2>1. Skład Chemiczny:</h2>
 
-            <h3>Skały Magmowe</h3>
-            <p>
-              Charakteryzują się zróżnicowanym składem chemicznym, który wynika
-              z różnych proporcji pierwiastków wchodzących w skład magmy. Na
-              przykład, skały magmowe głębinowe (intruzywne) zwykle zawierają
-              więcej krzemionki (SiO2), co prowadzi do powstania skał takich jak
-              granit. Z kolei skały magmowe wulkaniczne (ekstruzywne) mogą mieć
-              niższe stężenie krzemionki, jak w przypadku bazaltu.
-            </p>
-            <h3>Skały Wapienne</h3>
-            <p>
-              Skały te zawierają głównie węglan wapnia (CaCO3), który jest
-              produktem akumulacji szczątków organicznych. Analiza chemiczna
-              skał wapiennych może potwierdzić ich skład wapniowy.
-            </p>
-          </article>
-          <article id="article">
-            <h2>2. Struktura i Tekstura:</h2>
+              <h3>Skały Magmowe</h3>
+              <p>
+                Charakteryzują się zróżnicowanym składem chemicznym, który
+                wynika z różnych proporcji pierwiastków wchodzących w skład
+                magmy. Na przykład, skały magmowe głębinowe (intruzywne) zwykle
+                zawierają więcej krzemionki (SiO2), co prowadzi do powstania
+                skał takich jak granit. Z kolei skały magmowe wulkaniczne
+                (ekstruzywne) mogą mieć niższe stężenie krzemionki, jak w
+                przypadku bazaltu.
+              </p>
+              <h3>Skały Wapienne</h3>
+              <p>
+                Skały te zawierają głównie węglan wapnia (CaCO3), który jest
+                produktem akumulacji szczątków organicznych. Analiza chemiczna
+                skał wapiennych może potwierdzić ich skład wapniowy.
+              </p>
+            </article>
+            <article id="article">
+              <h2>2. Struktura i Tekstura:</h2>
 
-            <h3>Skały magmowe</h3>
-            <p>
-              Ich struktura może być bardzo zróżnicowana w zależności od
-              szybkości krzepnięcia magmy. Skały magmowe głębinowe często
-              charakteryzują się dużymi kryształami, podczas gdy skały magmowe
-              wulkaniczne mają zazwyczaj drobną lub skryształowaną teksturę.
-            </p>
+              <h3>Skały magmowe</h3>
+              <p>
+                Ich struktura może być bardzo zróżnicowana w zależności od
+                szybkości krzepnięcia magmy. Skały magmowe głębinowe często
+                charakteryzują się dużymi kryształami, podczas gdy skały magmowe
+                wulkaniczne mają zazwyczaj drobną lub skryształowaną teksturę.
+              </p>
 
-            <h3>Skały Wapienne</h3>
-            <p>
-              Skały te często mają charakterystyczną teksturę składającą się z
-              drobnych ziaren, co wynika z procesów diagenetycznych, które
-              przekształcają osady wapienne w skały.
-            </p>
-          </article>
-          <article id="article">
-            <h2>3. Obecność Skamieniałości:</h2>
-            <h3>Skały Wapienne</h3>
-            <p>
-              Jednym z najbardziej charakterystycznych cech skał wapiennych jest
-              obecność skamieniałości, takich jak muszle, koralowce czy amonity.
-              Te pozostałości organiczne stanowią ważny znacznik historyczny i
-              biologiczny dla tych skał.
-            </p>
-          </article>
-        </section>
-        <a href="./skaly.html" class="button-link">Wróć do góry</a>
+              <h3>Skały Wapienne</h3>
+              <p>
+                Skały te często mają charakterystyczną teksturę składającą się z
+                drobnych ziaren, co wynika z procesów diagenetycznych, które
+                przekształcają osady wapienne w skały.
+              </p>
+            </article>
+            <article id="article">
+              <h2>3. Obecność Skamieniałości:</h2>
+              <h3>Skały Wapienne</h3>
+              <p>
+                Jednym z najbardziej charakterystycznych cech skał wapiennych
+                jest obecność skamieniałości, takich jak muszle, koralowce czy
+                amonity. Te pozostałości organiczne stanowią ważny znacznik
+                historyczny i biologiczny dla tych skał.
+              </p>
+            </article>
+          </section>
+          <a href="./skaly.html" class="button-link">Wróć do góry</a>
+        </div>
       </div>
     </main>
-    <footer>&copy; 2024 Moja Pierwsza Strona Internetowa</footer>
+    <footer id="footer">&copy; 2024 Moja Pierwsza Strona Internetowa</footer>
   </body>
 </html>
